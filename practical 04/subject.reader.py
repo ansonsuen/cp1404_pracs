@@ -20,8 +20,8 @@ def get_data():
         print(line)  # See what a line looks like
         print(repr(line))  # See what a line really looks like
         line = line.strip()  # Remove the \n
-        line = line.strip()  # Remove the \n
         parts = line.split(',')  # Separate the data into its parts
+        parts[2] = int(parts[2])
         print(parts, end=' ,')  # See if that worked
         data.append(parts)
     input_file.close()
