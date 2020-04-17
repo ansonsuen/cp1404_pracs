@@ -12,6 +12,8 @@ def lst_of_numbers():
 
 
 lst_of_numbers()
+
+
 def main():
     """Display income report for incomes over a given number of months."""
     incomes = []
