@@ -9,6 +9,7 @@ print(COLOR_TO_CODE)
 
 
 def main():
+    """Enter a name and get the code"""
     colour_name = input("Enter a colour name: ").strip()
     while colour_name != "":
         print("The code for \"{}\" is {}".format(colour_name,

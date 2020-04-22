@@ -6,13 +6,12 @@ MAX_DECREASE = 0.05
 MIN_PRICE = 0.01
 MAX_PRICE = 1000.0
 INITIAL_PRICE = 10.0
-OUTPUT_FILE = "stock_output.txt"
 
+OUTPUT_FILE = "stock_output.txt"
 out_file = open(OUTPUT_FILE, 'w')
 price = INITIAL_PRICE
 day = 0
 print("Starting price: ${:,.2f}".format(price), file=out_file.close())
-
 while MIN_PRICE <= price <= MAX_PRICE:
     day += 1
     price_change = 0
@@ -29,4 +28,7 @@ while MIN_PRICE <= price <= MAX_PRICE:
 
     price *= (1 + price_change)
     print("On day {}, price is ${:,.2f}".format(day, price), file=out_file.close())
-out_file.close()
+    out_file.close()
+if __name__ == '__main__':
+   main()
+
