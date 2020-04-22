@@ -8,21 +8,18 @@ FILENAME = "subject_data.txt"
 
 def main():
     """Read subject data and display neatly."""
-    data = get_data()
+    data = []
+    load_data(data)
     display_subjects(data)
 
 
-def get_data():
+def load_data(data):
     """Read data from file formatted like: subject,lecturer,number of students."""
-    data=[]
     input_file = open(FILENAME)
     for line in input_file:
-        print(line)  # See what a line looks like
-        print(repr(line))  # See what a line really looks like
         line = line.strip()  # Remove the \n
         parts = line.split(',')  # Separate the data into its parts
         parts[2] = int(parts[2])
-        print(parts, end=' ,')  # See if that worked
         data.append(parts)
     input_file.close()
     return data
@@ -31,7 +28,8 @@ def get_data():
 def display_subjects(data):
     """Display data nicely."""
     for subject_data in data:
-        print("{} is taught by {} Lovelace and has {}students".format(*subject_data))
+        print("{} is taught by {:12} Lovelace and has {:3} students".format(*subject_data))
 
 
-main()
+if __name__ == '__main__':
+    main()

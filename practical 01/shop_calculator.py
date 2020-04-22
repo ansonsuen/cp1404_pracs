@@ -1,18 +1,21 @@
-def main():
-    number_of_item = int(input("Number of inputs:"))
-    total_price = 0
-    while number_of_item < 0:
-        print("invalid number:")
-        number_of_item = int(input())
-    for i in range(number_of_item):
-        price = float(input("Price of item:"))
-        total_price += price
-    if total_price > 100:
-        total_price *= 0.9
-        print("Total price for {} items is ${:.2f} ".format(number_of_item, total_price))
-    else:
-        print("Total price for {} items is ${:.2f} ".format(number_of_item, total_price))
+"""
+CP1404/CP5632 - Practical - Suggested Solution
+Shop calculator program to determine total (discounted) price
+"""
 
+total = 0
+number = int(input("Number of items: "))
+while number < 0:
+    print("Invalid number of items!")
+    number = int(input("Number of items: "))
+for i in range(number):
+    price = float(input("Price of item: "))
+    total += price
 
-if __name__ == '__main__':
-    main()
+if total > 100:
+    total *= 0.9  # apply 10% discount
+
+print("Total price for ", number, " items is $", total, sep='')
+
+# with string formatting for currency output
+print("Total price for {} items is ${:.2f}".format(number, total))

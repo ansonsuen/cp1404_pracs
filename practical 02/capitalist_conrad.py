@@ -1,3 +1,4 @@
+
 import random
 
 MAX_INCREASE = 0.1
@@ -20,13 +21,12 @@ while MIN_PRICE <= price <= MAX_PRICE:
     if random.randint(1, 2) == 1:
         # generate a random floating-point number
         # between 0 and MAX_INCREASE
-        price_change = random.uniform(0, MAX_INCREASE)
+        price_change = random.uniform(5,25)
     else:
         # generate a random floating-point number
         # between negative MAX_DECREASE and 0
-        price_change = random.uniform(-MAX_DECREASE, 0)
+        price_change = random.uniform(10,20)
 
     price *= (1 + price_change)
     print("On day {}, price is ${:,.2f}".format(day, price), file=out_file.close())
-
 out_file.close()
