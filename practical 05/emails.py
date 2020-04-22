@@ -1,15 +1,3 @@
-"""
-CP1404/CP5632 Practical - Suggested Solution
-Email to name dictionary
-"""
-
-
-"""
-CP1404/CP5632 Practical - Suggested Solution
-Email to name dictionary
-"""
-
-
 def main():
     """Create dictionary of emails-to-names."""
     email_to_name = {}
@@ -32,6 +20,7 @@ def get_name_from_email(email):
     parts = prefix.split('.')
     name = " ".join(parts).title()
     return name
+
 
 if __name__ == '__main__':
     main()
