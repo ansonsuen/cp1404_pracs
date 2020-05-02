@@ -27,6 +27,12 @@ def main():
                 print(" Fuel amount must be >= 0")
                 add_car_fuel = int(input("How many units of fuel do you want to add to the car?"))
             car.add_fuel(add_car_fuel)
+            print("Added {} units of fuel.".format(add_car_fuel))
+        else:
+            print("invalid")
+        print(MENU)
+        choice = input("Enter your choice: ").lower()
+    print("\nGood bye {}'s driver.".format(car.name))
 
 
 if __name__ == '__main__':
