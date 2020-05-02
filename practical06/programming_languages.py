@@ -3,7 +3,7 @@ def is_dynamic():
 
 
 class ProgrammingLanguage:
-    """Represent a language."""
+    """Represent language."""
 
     def __init__(self, name='', typing='', reflection='', year=0):
         """Constrct a language object with field ,typing ,reflection  and year"""
