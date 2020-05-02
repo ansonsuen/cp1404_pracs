@@ -2,7 +2,7 @@ from practical06.guitar import Guitar
 
 
 def run_unqiue_test():
-    """Tests for Guitar class."""
+    """Tests for a Guitar class."""
     guitar = Guitar("Gibson L-5 CES", 1992, 16035.40)
     another_guitar = Guitar("Another Guitar", 2010, 909)
     print("{} get_age {} - Expected 98. Got {}".format(guitar.name, 95,guitar.get_age()))
