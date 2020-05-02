@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 class Guitar:
-    """Represent a guitar"""
+    """Represent guitar"""
     def __init__(self, name='', cost=0, year=0):
         """Constrct a guitar object with name ,cost  and year"""
         self.name = name
