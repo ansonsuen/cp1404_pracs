@@ -1,0 +1,25 @@
+  
+BoxLayout:
+    orientation: 'vertical'
+#    orientation: orizontal'
+    Button:
+
+        text: 'Clear'
+        on_press:app.clear_button()
+
+
+    TextInput:
+        id: input_name
+        text: 'Guido'
+        on_touch_down: self.text = ""
+
+
+    Button:
+        text:"Greet"
+        id: output_label
+        on_press: app.handle_greet()
+
+
+    Button:
+        text: 'Hello Guido'
+        color: (1, 1, 0, 1)
