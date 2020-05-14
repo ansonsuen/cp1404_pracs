@@ -1,7 +1,7 @@
 from random import randint
 
 
-class unreliable_car:
+class unreliable_car(Car):
     """An unreliable version of a car."""
 
     def __init__(self, name, fuel, reliability):
