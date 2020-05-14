@@ -1,4 +1,5 @@
 from random import randint
+from practical08.car import Car
 
 
 class unreliable_car(Car):

@@ -1,4 +1,4 @@
-from prac_08.taxi import Taxi
+from practical08.taxi import Taxi
 
 
 def main():
