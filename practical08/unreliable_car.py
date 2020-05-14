@@ -2,7 +2,7 @@ from random import randint
 from practical08.car import Car
 
 
-class unreliable_car(Car):
+class Unreliable_Car(Car):
     """An unreliable version of a car."""
 
     def __init__(self, name, fuel, reliability):
@@ -11,13 +11,10 @@ class unreliable_car(Car):
         self.reliability = reliability
 
     def drive(self, distance):
-        """Drive the car based on reliability."""
+        """Drive the car, only sometimes, based on reliability."""
         random_number = randint(1, 100)
         if random_number >= self.reliability:
             distance = 0
-        driven_distance = super().__init__(distance)
-        return driven_distance
-
-
-
-
+        # Either way, we want to call the parent class's drive method (maybe driving 0)
+        distance_driven = super().drive(distance)
+        return distance_driven
