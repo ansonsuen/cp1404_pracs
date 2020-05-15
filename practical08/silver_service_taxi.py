@@ -1,7 +1,7 @@
 from practical08.taxi import Taxi
 
 
-class Silver_Service_Taxi(Taxi):
+class SilverServiceTaxi(Taxi):
     """Represent a SilverServiceTaxi."""
     flag_fall = 4.5
 
