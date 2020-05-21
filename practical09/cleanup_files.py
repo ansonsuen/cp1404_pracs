@@ -17,7 +17,10 @@ def main():
             os.rename(full_name, new_name)
 
 
-
+def get_fixed_filename(filename):
+    """Return a 'fixed' version of filename."""
+    new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
+    return new_name
 
 
 if __name__ == '__main__':
