@@ -9,7 +9,8 @@ def main():
     prius_taxi.drive(40)
 
     # Print the taxi's details and current fare
-    print(prius_taxi)
+    print(prius_taxi)\
+
 
     # Restart the meter (start a new fare) and then drive the car 100km
     prius_taxi.start_fare()
