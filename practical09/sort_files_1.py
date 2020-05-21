@@ -4,7 +4,7 @@ import os
 
 
 def main():
-    """Move files into folders with the same format."""
+    """Move files into folders with the same format ."""
     os.chdir("FilesToSort")
     for filename in os.listdir('.'):
         if os.path.isdir(filename):
