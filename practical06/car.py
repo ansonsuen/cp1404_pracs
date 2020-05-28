@@ -9,7 +9,7 @@ class Car:
          name: string, reference name for car
         fuel: float, one unit of fuel drives one kilometre
         """
-        self.name
+        self.name=name
         self.fuel = fuel
         self.odometer = 0
 
